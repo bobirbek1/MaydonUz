@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/bot_nav_home">
+
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/fragment_profil"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui."
+        android:label="ProfilFragment"/>
+    <fragment
+        android:id="@+id/bot_nav_home"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+    <fragment
+        android:id="@+id/bot_nav_map"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.mapFragment.MapFragment"
+        android:label="MapFragment" />
+    <fragment
+        android:id="@+id/bot_nav_favourite"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.history.FragmentFavourite"
+        android:label="FragmentFavourite" />
+    <fragment
+        android:id="@+id/fragmentNews"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.fragmentNews.FragmentNews"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/fragmentMaydon"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.fragmentMaydon.FragmentMaydon"
+        android:label="FragmentMaydon" />
+    <fragment
+        android:id="@+id/bot_nav_maydonlar"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.fragmentMaydon.FragmentListMaydonlar"
+        android:label="FragmentListMaydonlar" />
+    <fragment
+        android:id="@+id/fragmentSharh"
+        android:name="com.sample.firebaseexample.ui.main_screen.ui.Fragment_sharh.FragmentSharh"
+        android:label="FragmentSharh" />
+
+
+</navigation>

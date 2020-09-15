@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/baseFragment2">
+
+    <fragment
+        android:id="@+id/uploadFragment"
+        android:name="com.sample.firebaseexample.fragments.UploadFragment"
+        android:label="UploadFragment">
+        <action
+            android:id="@+id/action_uploadFragment_to_loadFragment"
+            app:destination="@id/loadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationFragment"
+        android:name="com.sample.firebaseexample.fragments.VerificationFragment"
+        android:label="VerificationFragment"
+        >
+        <action
+            android:id="@+id/action_verificationFragment_to_uploadFragment"
+            app:destination="@id/uploadFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadFragment"
+        android:name="com.sample.firebaseexample.fragments.LoadFragment"
+        android:label="LoadFragment" />
+    <fragment
+        android:id="@+id/registrationFragment2"
+        android:name="com.sample.firebaseexample.fragments.RegistrationFragment"
+        android:label="RegistrationFragment" >
+        <argument
+            android:name="myArg"
+            app:argType="string"
+            android:defaultValue="false"/>
+        <action
+            android:id="@+id/action_registrationFragment2_to_verificationFragment"
+            app:destination="@id/verificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/baseFragment2"
+        android:name="com.sample.firebaseexample.fragments.BaseFragment"
+        android:label="BaseFragment" >
+        <action
+            android:id="@+id/action_baseFragment2_to_registrationFragment2"
+            app:destination="@id/registrationFragment2" />
+        <action
+            android:id="@+id/action_baseFragment2_to_uploadFragment"
+            app:destination="@id/uploadFragment" />
+    </fragment>
+</navigation>
